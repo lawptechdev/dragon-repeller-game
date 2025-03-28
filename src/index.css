@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+#background-img {
+    background-image: url(../asset/images/dragon-repeller-bg.png);
+}
+

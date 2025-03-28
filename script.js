@@ -96,11 +96,11 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 // Unmute and play the audio after a user interaction
-document.addEventListener('click', () => {
-  const audio = document.getElementById('bg-music');
-  audio.muted = false;
-  audio.play();
-});
+// document.addEventListener('click', () => {
+//   const audio = document.getElementById('bg-music');
+//   audio.muted = false;
+//   audio.play();
+// });
 
 function update(location) {
   monsterStats.style.display = "none";

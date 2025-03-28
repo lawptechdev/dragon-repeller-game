@@ -3,21 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>RPG - Dragon Repeller</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="./src/output.css">
   </head>
-  <body class="m-0 p-0 h-full overflow-hidden font-mono">
+  <body class="m-0 p-0 h-screen overflow-hidden font-mono">
     <!-- Background image -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-75 z-[-1]">
-      <img class="w-full h-full object-cover" src="./asset/images/dragon-repeller-bg.png" alt="dragon repeller background">
-    </div>
+    <div class="absolute top-0 left-0 bg-cover bg-center min-h-full w-full -z-10" id="background-img"></div>
     <!-- Background music -->
     <audio id="bg-music" autoplay loop muted>
       <source src="./asset/music/adventure-music-164795.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <!-- Game window -->
-    <div class="max-w-170 max-h-500 bg-orange-700 mt-[30px] mx-auto p-5" id="game">
-      <div class="border">
+    <div class="relative w-[700px] max-sm:w-full :h-[300px] bg-orange-700 mt-[30px] mx-auto p-5" id="game">
         <div class="p-5 text-black" id="stats">
           <span class="stat pr-5">XP: <strong><span id="xpText">0</span></strong></span>
           <span class="stat pr-5">Health: <strong><span id="healthText">100</span></strong></span>
